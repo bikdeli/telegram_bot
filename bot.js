@@ -8,13 +8,13 @@ const bot = new TelegramBot(token, { polling: true });
 // واکنش به دستور /start
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  bot.sendMessage(chatId, "به صرافی بیتیوم خوش آمدید! برای خرید و فروش همستر و سایر ارز های دیجیتال دکمه شروع رو بزنید.", {
+  bot.sendMessage(chatId, "به صرافی بیتیوم خوش آمدید!خرید ارزهای دیجیتال پرطرفدار با احراز هویت آسان و سریع ⚡️ کیف پول امن و سامانه خرید و فروش ارزهای همستر, نات کوین, تون کوین,‌بیت کوین، تتر، شیبا و 150+ رمزارز در صرافی بیتیوم..", {
     reply_markup: {
       inline_keyboard: [
         [
           {
-            text: "باز کردن اپلیکیشن",
-            web_app: { url: "https://bitiom.ir?chatId='"+chatId+"'"} // آدرس وب اپلیکیشن خود را وارد کنید
+            text: "خرید و فروش",
+            web_app: { url: `https://bitiom.ir?chatId=${chatId}` } // آدرس وب اپلیکیشن خود را وارد کنید
           }
         ]
       ]
