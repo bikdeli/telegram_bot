@@ -14,7 +14,7 @@ bot.onText(/\/start/, (msg) => {
         [
           {
             text: "باز کردن اپلیکیشن",
-            web_app: { url: "https://bitiom.ir/" } // آدرس وب اپلیکیشن خود را وارد کنید
+            web_app: { url: "https://bitiom.ir?chatId='"+chatId+"'"} // آدرس وب اپلیکیشن خود را وارد کنید
           }
         ]
       ]
